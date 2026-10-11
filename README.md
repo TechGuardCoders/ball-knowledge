@@ -23,7 +23,7 @@ Ball Knowledge :3100  (FastAPI)
    ├─ route + failover    → BackendChain (ordered fallback, health tracking)
    └─ audit log           → every auth/reject/serve/failover event
 
-   ├─ primary:  glm-spark      real vLLM on 192.168.0.182:8000
+   ├─ primary:  glm-spark      real vLLM on <head-node>:8000
    └─ fallback: mock-fallback  in-process echo (never fails)
 ```
 

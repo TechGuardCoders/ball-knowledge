@@ -62,7 +62,7 @@ def default_chain() -> BackendChain:
     return BackendChain(backends=[
         Backend(
             name="glm-spark",
-            base_url=os.environ.get("VLLM_BASE_URL", "http://192.168.0.182:8000"),
+            base_url=os.environ.get("VLLM_BASE_URL", "http://localhost:8000"),
             api_key=os.environ.get("VLLM_API_KEY"),
             model=os.environ.get("VLLM_MODEL", "glm-5.3-flash"),
         ),
